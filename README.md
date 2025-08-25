@@ -1,8 +1,11 @@
-#**Jarvis Voice Assistant**
-**Overview**
+#  **Jarvis Voice Assistant**
+
+#  **Overview**
+
 Jarvis Voice Assistant is a Python-based desktop voice assistant inspired by the Iron Man AI. It allows users to control their computer using voice commands or text inputs. The assistant can open applications, browse websites, manage WhatsApp interactions (messages, voice calls, video calls), and even handle mobile phone calls and SMS via SIM. Contacts and system app paths are stored in an SQLite database for easy management.
 This project uses a combination of speech recognition, text-to-speech, web automation, and database handling to provide a seamless user experience.
-**Features**
+
+#  **Features**
 
 Voice and Text Command Support: Control your desktop with voice inputs (using a microphone) or typed text commands.
 Application Control: Open system apps like Notepad, Chrome, YouTube, or any video streaming website (e.g., "open notepad", "open chrome", "open youtube").
@@ -12,9 +15,10 @@ Database Management: Uses SQLite3 to store contact lists, website URLs, and syst
 Wake Word Detection: Uses Porcupine (pvporcupine) for hotword detection like "Jarvis" to activate the assistant.
 Cross-Platform Compatibility: Primarily tested on Windows, but adaptable to other operating systems with minor changes.
 
-**Technologies Used**
+#**Technologies Used**
 
-**Python Libraries:**
+#  **Python Libraries:**
+
 pyaudio: For audio input/output handling.
 pywhatkit: For WhatsApp automation (messages, calls).
 playsound: To play audio files.
@@ -26,13 +30,13 @@ pvporcupine: For wake word/hotword detection.
 sqlite3: Built-in Python module for database operations (storing contacts, app paths, etc.).
 
 
-**Set Up Virtual Environment (Recommended):**
+#  **Set Up Virtual Environment (Recommended):**
+
 python -m venv .venv
 .venv\Scripts\activate  # On Windows
-# or source .venv/bin/activate on Unix
 
 
-**Install Dependencies:Create a requirements.txt file with the following content:**
+#  **Install Dependencies:Create a requirements.txt file with the following content:**
 pyaudio
 pywhatkit
 playsound
@@ -43,18 +47,18 @@ pvporcupine
 
 
 
-**Database Setup:**
+#  **Database Setup:**
 
 Run db.py to initialize the SQLite database (jarvis.db) for contacts and paths:python db.py
 
 
-**Run the Assistant:**
+#  **Run the Assistant:**
 python run.py
 
 Say "Jarvis" to wake it up, then give commands like "open chrome" or "send message to Mom".
 
 
-**Usage**
+#  **Usage**
 
 Voice Commands: Speak clearly into the microphone after the wake word.
 Text Inputs: Use the Eel-based web interface to type commands if voice isn't preferred.
@@ -67,10 +71,10 @@ Examples:
 
 
 
-**Video Demo**
-Watch the demo video here 
+#  **Video Demo**
+Watch the demo video here jarvis_demo.mp4
 
-**Acknowledgments**
+#  **Acknowledgments**
 
 Inspired by JARVIS from Iron Man.
 Thanks to the open-source libraries used in this project.
