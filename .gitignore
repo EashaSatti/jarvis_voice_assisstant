@@ -1,0 +1,11 @@
+/.venv
+contacts.csv
+jarvis.db
+/engine/__pycache__
+*.pyc
+
+# Other common exclusions
+*.log
+*.DS_Store
+*.sqlite3
+*.bat
